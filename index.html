@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="text/html; charset=utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swipper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="table.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="swipper.js"></script>
+    <script src="load_page.js"></script>
+
+</head>  
+
+<body>
+
+<header>
+    <nav class="top-menu">
+        <ul class="menu-main">
+            <li><h3><a href="#">Тюлени</a></h3></li>
+            <li><h3><a href="#">Морские котики</a></h3></li>
+            <li><h3><a href="#">Дикобразы!</a></h3></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="pic"> </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" class="pic0"></div>
+            <div class="swiper-slide" class="pic1"></div>
+            <div class="swiper-slide" class="pic2"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <table>
+        <tr>
+            <th id="a">Человек</th>
+            <th>Его фамилия</th>
+            <th>Партнёр</th>
+            <th id="b">Рост</th>
+        </tr>
+        <tr>
+            <td>Тима</td>
+            <td>Лазарев</td>
+            <td>Тима</td>
+            <td>0.3</td>
+        </tr>
+        <tr>
+            <td id="d">Тима</td>
+            <td>Белобров</td>
+            <td>Тима</td>
+            <td id="c">3*3</td>
+        </tr>
+    </table>
+
+
+
+    <form id="reviews">
+        <legend>Мы ждём ваши отзывы!</legend>
+        <p><label for="name"> Имя </label> <input id="name" type="text" list="names"></p>
+        <datalist id="names">
+            <option>Лёша</option>
+            <option>Тимоша</option>
+            <option>Иван</option>
+        </datalist>
+            
+        <p><label for="e-mail"> E-mail </label> <input type="email" id="email"></p>
+        <textarea placeholder="Напишите здесь ваш отзыв! Будьте честны, так вы поможете нам стать лучше!"></textarea>
+
+    </form>
+    <div id="load_time"></div>
+</main>
+<footer>
+</footer>
+</body>
+</html>

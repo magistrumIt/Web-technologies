@@ -1,0 +1,82 @@
+.top-menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    background: #FFC8FF;
+}
+
+.menu-main {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-main li {
+    display: inline-block; /*меню в строку*/
+}
+
+.menu-main a {
+    display: inline-block;
+    padding: 25px 30px; /*ширина и высота меню*/
+    color: white;
+    text-decoration: none;
+}
+
+.menu-main a.current,
+.menu-main a:hover {
+    color: #FF00FF;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background-color: #FFFFAD;
+    width: 100%;
+
+}
+
+
+
+
+a:visited {
+
+    color: #000000;
+
+}
+
+
+div {
+ height:500px;
+}
+
+@media (max-width: 680px) {
+    .top-menu {margin: 0;}
+    .menu-main li {
+        display: block;
+        margin-right: 0;
+    }
+    .menu-main a {display: block;}
+}
+
+.pic {
+    margin-top: 120px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: url(img/Я.jpg) no-repeat 0px;
+    background-size: auto 700px;
+    margin-bottom: 50px;
+
+}
+
+#reviews {
+    margin: 100px;
+    margin-left: 150px;
+}
+
+#load_time{
+    color: black;
+}
