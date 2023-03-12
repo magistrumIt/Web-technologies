@@ -84,6 +84,12 @@ div {
 }
 
 
+#reviews {
+    margin: 100px;
+    margin-left: 150px;
+}
+
+
 @media (max-width: 680px) {
     .top-menu {margin: 0;}
     .menu-main li {

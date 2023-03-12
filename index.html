@@ -5,9 +5,11 @@
     <title></title>
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="swipper.css">
+ <link rel="stylesheet" href="table.css">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
  <script defer src="swipper.js"></script>
+ <script defer src="load_page.js"></script>
 </head>  
 
 <body>
@@ -31,6 +33,37 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
+
+    <form id="reviews">
+        <legend>Мы ждем ваши отзывы!</legend>
+        <p><label for="name">Имя</label><input placeholder="Тима" type="text"></p>
+        <p><label for="email">E-mail</label><input type="email"></p>
+        <textarea placeholder="ПИШИ ОТЗЫВ ТУТ, ОГУЗОК!!!"></textarea>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+
+    <div id="load_time"></div>
+
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Вкус</th>
+            <th>Цвет</th>
+            <th>Кол-во полигонов</th>
+        </tr>
+        <tr>
+            <td>Лазарев</td>
+            <td>Манго маракуя</td>
+            <td>Голубой</td>
+            <td>КРАСАВЕЕЕЕЦ</td>
+        </tr>
+        <tr id="b">
+            <td>Белобров</tc>
+            <td>Матушка-земля</td>
+            <td>Голубой</td>
+            <td>Селедка</td>
+        </tr>
+    </table>
 
 </main>
 <footer>
