@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo+Black);
 
 body {
-  display: grid;
+  /*display: grid;*/
   place-items: center;
   height: 100vh;
   padding: 0;
@@ -59,4 +59,38 @@ h2 {
    position: relative;
    top: -50px;
   }
+}
+
+
+
+
+.top-menu {
+    mar
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1000;
+    background: #FFC8FF;
+}
+
+.menu-main {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-main li {
+    display: inline-block; /*меню в строку*/
+}
+
+.menu-main a {
+    display: inline-block;
+    padding: 25px 30px; /*ширина и высота меню*/
+    color: white;
+    text-decoration: none;
+}
+
+.menu-main a.current,
+.menu-main a:hover {
+    color: #FF00FF;
 }

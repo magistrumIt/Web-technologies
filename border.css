@@ -1,4 +1,5 @@
 button {
+  margin-top: 250px;
   width: 600px;
   height: 600px;
   font-size:30px;
@@ -62,7 +63,7 @@ button:before {
 body {
   margin: 0;
   min-height: 100vh;
-  display: grid;
+  /*display: grid;*/
   place-content: center;
   grid-auto-flow: column;
   background-color: #111;
@@ -75,4 +76,35 @@ button>img{
     top: 2px;
     width: 594px;
     opacity:0.9;
+}
+
+
+.top-menu {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1000;
+    background: #FFC8FF;
+}
+
+.menu-main {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-main li {
+    display: inline-block; /*меню в строку*/
+}
+
+.menu-main a {
+    display: inline-block;
+    padding: 25px 30px; /*ширина и высота меню*/
+    color: white;
+    text-decoration: none;
+}
+
+.menu-main a.current,
+.menu-main a:hover {
+    color: #FF00FF;
 }
