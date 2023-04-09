@@ -19,7 +19,7 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li><h3><a href="#">Тюлени</a></h3></li>
-            <li><h3><a href="#">Морские котики</a></h3></li>
+            <li><h3><a href="seacats.html">Морские котики</a></h3></li>
             <li><h3><a href="#">Дикобразы!</a></h3></li>
         </ul>
     </nav>
@@ -62,7 +62,7 @@
 
     <form id="reviews">
         <legend>Мы ждём ваши отзывы!</legend>
-        <p><label for="name"> Имя </label> <input id="name" type="text" list="names"></p>
+        <p><label for="name"> Имя </label> <input id="user" type="text" list="names"></p>
         <datalist id="names">
             <option>Лёша</option>
             <option>Тимоша</option>
@@ -71,8 +71,9 @@
             
         <p><label for="e-mail"> E-mail </label> <input type="email" id="email"></p>
         <textarea placeholder="Напишите здесь ваш отзыв! Будьте честны, так вы поможете нам стать лучше!"></textarea>
-
+        <p><input type="submit" onclick="getName()" value="Отправить"></p>
     </form>
+    <script defer src="login.js"></script>
     <div id="load_time"></div>
 </main>
 <footer>
