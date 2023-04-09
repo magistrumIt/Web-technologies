@@ -1,7 +1,7 @@
 .top-menu {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     z-index: 1000;
     background: #FFC8FF;
 }

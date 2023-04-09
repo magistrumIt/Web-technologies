@@ -19,6 +19,9 @@
             <li><h3><a href="beautiful.html">Красивый Тима</a></h3></li>
             <li><h3><a href="not_beautiful.html">Некрасивый Тима</a></h3></li>
             <li><h3><a href="index.html">Мы семья!!!</a></h3></li>
+            <li><h3><a href="new_year.html">New Year</a></h3></li>
+            <li><h3><a href="macbook.html">Macbook</a></h3></li>
+            <li><h3><a href="border.html">Border</a></h3></li>
         </ul>
     </nav>
 </header>
@@ -36,11 +39,13 @@
 
     <form id="reviews">
         <legend>Мы ждем ваши отзывы!</legend>
-        <p><label for="name">Имя</label><input placeholder="Тима" type="text"></p>
-        <p><label for="email">E-mail</label><input type="email"></p>
+        <p><label for="name">Имя</label><input id="user" placeholder="Тима" type="text"></p>
+        <p><label for="email">E-mail</label><input id="E-mail" placeholder="почта@мыло.ru" type="email"></p>
         <textarea placeholder="ПИШИ ОТЗЫВ ТУТ, ОГУЗОК!!!"></textarea>
-        <p><input type="submit" value="Отправить"></p>
+        <p><input type="submit" onclick="GetName()" value="Отправить"></p>
     </form>
+
+     <script defer src="login.js"></script>
 
     <div id="load_time"></div>
 
